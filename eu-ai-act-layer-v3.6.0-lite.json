@@ -1,0 +1,171 @@
+{
+  "module_id": "EU-AI-ACT-LAYER-LITE",
+  "name": "EU AI Act Layer - Lite",
+  "version": "3.6.0-lite",
+  "status": "released",
+  "tier": "lite",
+  "powered_by": "X-Loop3 Labs",
+
+  "positioning": {
+    "tagline": "100% Free. Real governance baseline. No marketing abstractions.",
+    "framing": "Lite provides a technical governance baseline for AI systems under EU AI Act exposure. It translates regulatory requirements into concrete engineering artifacts, schemas, and checklists. This is not a demo. This is a real baseline.",
+    "delivery_model": "artifacts_only",
+    "why_free": "The market lacks serious, implementation-ready EU AI Act tooling. We release Lite for free to establish a usable floor.",
+    "no_services": true,
+    "no_support": true,
+    "no_consulting": true,
+    "no_implementation": true,
+    "no_certification": true
+  },
+
+  "legal_disclaimer_summary": "Engineering governance artifacts only. Not legal advice. No compliance guarantee.",
+
+  "intended_use": {
+    "system_classes": [
+      "high_risk_annex_iii",
+      "general_purpose_ai_with_eu_exposure",
+      "startups_and_smes_requiring_baseline_structure"
+    ],
+    "not_intended_for": [
+      "runtime_enforcement",
+      "automated_regulatory_submission",
+      "sovereign_or_national_security_use"
+    ]
+  },
+
+  "core_principles": [
+    "Explicit system purpose and boundaries before operation",
+    "Prohibited practices must be screened before deployment",
+    "Risks must be documented with mitigations",
+    "Human oversight paths must be defined for high-severity risks",
+    "Evidence must be structured, not narrative"
+  ],
+
+  "herm_status": {
+    "enabled": false,
+    "note": "HERM decision coherence engine is not included in Lite. Available from Pro tier."
+  },
+
+  "capabilities": {
+    "baseline_scaffold": true,
+    "strict_templates": false,
+    "hard_consistency_gates": false,
+    "herm_enabled": false,
+
+    "included": [
+      "system_profile_template",
+      "annex_iii_category_reference",
+      "prohibited_practices_screen",
+      "risk_register_scaffold",
+      "gdpr_alignment_checklist",
+      "conformity_assessment_guidance",
+      "integration_checklist",
+      "glossary"
+    ],
+
+    "excluded_by_design": [
+      "consistency_engine",
+      "evidence_bundles",
+      "audit_index",
+      "hash_chain_integrity",
+      "cryptographic_signatures",
+      "court_readable_exports",
+      "governance_cycle_logs",
+      "annex_iv_complete_templates"
+    ]
+  },
+
+  "controlled_vocabulary": {
+    "mandatory_terms": [
+      "Intent",
+      "Risk",
+      "Human Oversight",
+      "Incident"
+    ],
+    "enforcement": {
+      "must_use_terms": false,
+      "mode": "guidance_only",
+      "normalization": {
+        "HITL": "Human Oversight",
+        "human-in-the-loop": "Human Oversight",
+        "post deployment monitoring": "Post-market Monitoring"
+      }
+    }
+  },
+
+  "artifacts": {
+    "required": [
+      "SYSTEM_PROFILE",
+      "ANNEX_III_MAPPING",
+      "PROHIBITED_PRACTICES_SCREEN",
+      "RISK_REGISTER",
+      "HUMAN_OVERSIGHT_SCHEMA"
+    ],
+
+    "optional": [
+      "DATA_LINEAGE",
+      "MODEL_CARD",
+      "TEST_REPORTS",
+      "POST_MARKET_MONITORING",
+      "CHANGE_LOG",
+      "INCIDENT_REPORT"
+    ],
+
+    "consistency_rules": []
+  },
+
+  "gating": {
+    "states": ["PASS", "FAIL"],
+    "policy": {
+      "fail_blocks_export": false,
+      "human_review_required": false,
+      "note": "Lite provides readiness signals only. No hard gating."
+    }
+  },
+
+  "export": {
+    "supported_outputs": [
+      "completion_checklist.json"
+    ],
+    "explicitly_not_supported": [
+      "evidence_bundles",
+      "audit_index",
+      "pdf_exports",
+      "signed_packages",
+      "court_readable_manifests"
+    ]
+  },
+
+  "normative_scope": {
+    "regulation": "EU Artificial Intelligence Act",
+    "high_risk_basis": "Annex III",
+    "annex_iii_categories": [
+      "1_biometric_identification",
+      "2_critical_infrastructure",
+      "3_education_training",
+      "4_employment",
+      "5_essential_services",
+      "6_law_enforcement",
+      "7_migration_asylum",
+      "8_judicial_democratic"
+    ],
+    "gdpr_alignment": "checklist_only",
+    "conformity_assessment": "guidance_only"
+  },
+
+  "license": {
+    "type": "Free Technical Baseline License (FTBL)",
+    "commercial_use_allowed": true,
+    "internal_use_allowed": true,
+    "redistribution_allowed": true,
+    "redistribution_conditions": {
+      "attribution_required": true,
+      "attribution_text": "Powered by X-Loop3 Labs - EU AI Act Layer",
+      "standalone_resale_prohibited": true
+    },
+    "jurisdiction": "Swiss law",
+    "venue": "Zurich, Switzerland"
+  },
+
+  "final_note": "Lite provides a real, usable governance baseline. It does not pretend to be more than it is. For consistency enforcement, evidence bundles, and audit-grade exports, see Pro and Enterprise tiers."
+}
