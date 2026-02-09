@@ -1,0 +1,63 @@
+EU AI Act Layer - Recommended Actions
+System: MedAssist AI
+Generated: 2026-02-09
+Layer: v3.6.0-lite
+
+=========================================
+IMMEDIATE ACTIONS (before deployment)
+=========================================
+
+1. Complete fairness audit for R004 (demographic bias)
+   Owner: Responsible AI Lead
+   Deadline: Before production deployment
+
+2. Obtain DPO sign-off on data processing scope
+   Owner: Data Protection Officer
+   Deadline: Before production deployment
+
+3. Verify conformity assessment route with legal counsel
+   Owner: Compliance Lead
+   Note: Healthcare AI likely requires notified body (Art. 43)
+
+=========================================
+SHORT-TERM ACTIONS (first 90 days)
+=========================================
+
+4. Establish post-market monitoring dashboard (Art. 72)
+   Owner: ML Engineering Lead
+   Metrics: Accuracy, drift, fairness, override rates
+
+5. Document incident response plan
+   Owner: Platform Engineering + Legal
+   Test: Tabletop exercise with 2+ team members
+
+6. Prepare evidence links for 3 sample decisions
+   Owner: Compliance Engineer
+   Purpose: Audit readiness dry run
+
+=========================================
+ONGOING ACTIONS
+=========================================
+
+7. Quarterly risk register review
+   Owner: Risk Committee
+
+8. Annual full governance review
+   Owner: Compliance Lead + Legal
+
+=========================================
+UPGRADE RECOMMENDATIONS
+=========================================
+
+Current tier: Lite (baseline)
+
+For production high-risk deployment, consider:
+- Pro: Adds consistency engine + trade-off governance
+- Enterprise: Adds evidence bundles + audit index + hash integrity
+- Contact: licensing@x-loop3.com
+
+=========================================
+DISCLAIMER: Engineering governance artifacts only.
+Not legal advice. No compliance guarantee.
+Powered by X-Loop3 Labs
+=========================================

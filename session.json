@@ -1,0 +1,85 @@
+{
+  "session_id": "EXAMPLE-HEALTHCARE-001",
+  "timestamp": "2026-02-09T14:30:00Z",
+  "layer_version": "3.6.0-lite",
+  "system_profile": {
+    "system_name": "MedAssist AI",
+    "provider": "Example Healthcare Corp",
+    "intended_purpose": "Support medical professionals with diagnostic or treatment-related insights for radiology imaging",
+    "non_goals": [
+      "Does not make final clinical decisions autonomously",
+      "Does not replace physician judgment",
+      "Does not process data of minors without parental consent"
+    ],
+    "deployment_context": "cloud",
+    "geographic_scope": "EU (DE, FR, NL)",
+    "affected_user_groups": "Radiologists, referring physicians, patients (indirect)"
+  },
+  "annex_iii_classification": {
+    "category": "8_judicial_democratic",
+    "note": "Healthcare AI supporting medical decisions - classified as high-risk under Annex III",
+    "high_risk": true
+  },
+  "prohibited_practices_screen": {
+    "PP-01": {"statement": "No subliminal or manipulative techniques", "result": "PASS"},
+    "PP-02": {"statement": "No exploitation of vulnerable groups", "result": "PASS"},
+    "PP-03": {"statement": "No social scoring", "result": "PASS"},
+    "PP-04": {"statement": "No emotion recognition in workplace/education", "result": "PASS"},
+    "PP-05": {"statement": "No behavior distortion causing harm", "result": "PASS"}
+  },
+  "risk_register": [
+    {
+      "risk_id": "R001",
+      "description": "Incorrect diagnostic suggestion leading to delayed treatment",
+      "severity": "critical",
+      "mitigation": "Mandatory physician review before any clinical action. System outputs clearly labeled as suggestions only.",
+      "owner": "Chief Medical Officer",
+      "status": "MITIGATED"
+    },
+    {
+      "risk_id": "R002",
+      "description": "Model drift degrading diagnostic accuracy over time",
+      "severity": "high",
+      "mitigation": "Quarterly performance benchmarking against validated test sets. Automated drift detection alerts.",
+      "owner": "ML Engineering Lead",
+      "status": "MONITORED"
+    },
+    {
+      "risk_id": "R003",
+      "description": "Privacy breach via diagnostic image logging",
+      "severity": "high",
+      "mitigation": "Data minimization policy. All images anonymized before processing. Access controls enforced.",
+      "owner": "Data Protection Officer",
+      "status": "MITIGATED"
+    },
+    {
+      "risk_id": "R004",
+      "description": "Bias against underrepresented demographic groups in training data",
+      "severity": "high",
+      "mitigation": "Pre-deployment fairness audit. Stratified performance metrics by demographic group.",
+      "owner": "Responsible AI Lead",
+      "status": "UNDER_REVIEW"
+    },
+    {
+      "risk_id": "R005",
+      "description": "System unavailability during critical diagnostic workflow",
+      "severity": "medium",
+      "mitigation": "Graceful fallback to manual workflow. 99.9% uptime SLA with monitoring.",
+      "owner": "Platform Engineering",
+      "status": "MITIGATED"
+    }
+  ],
+  "human_oversight": {
+    "mode": "Human-in-the-loop",
+    "description": "All AI-generated diagnostic suggestions require explicit physician confirmation before clinical action.",
+    "override_mechanism": "Physician can dismiss, modify, or override any AI suggestion.",
+    "escalation_path": "Unresolved disagreements escalate to department head."
+  },
+  "governance_readiness": {
+    "artifacts_completed": 5,
+    "artifacts_total": 5,
+    "status": "PASS",
+    "note": "Lite tier - baseline artifacts complete. For consistency checks and evidence bundles, upgrade to Pro or Enterprise."
+  },
+  "disclaimer": "Engineering governance artifacts only. Not legal advice. No compliance guarantee. Powered by X-Loop3 Labs."
+}
